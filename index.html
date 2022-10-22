@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
     <title>portfolio</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Arijit-D
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="">Home</a>
+          <a href="#about">About</a>
+          <a href="">Skills</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+ <div id="container">
+
+    <!--------------- home---------- -->
+  <div id="home">
+    <div class="text">
+        <p>
+            Hi 👋,
+        </p>
+        <p>
+            I'am Arijit
+        </p>
+        <p>
+        Java Backend Developer
+        </p>
+        <p>
+            Welcome to my portfolio !
+        </p>
+        <button>Resume</button>
+    </div>
+    <div class="image">
+         <img src="ArijitImg.jpeg" alt="">
+    </div>
+  </div>
+
+  <!--------------- About ------------------>
+
+  <div id="about">
+    <h2>About</h2>
+    <div class="line"></div>
+    <h2>I am Arijit Dhar</h2>
+    <p onclick="copyText()">
+        Quick learner and an aspiring full-stack web
+         developer with core knowledge of Java Backend
+         Development. Looking forward to applying
+         and enhancing my skills and knowledge as
+          a developer.
+    </p>
+    <p>
+        Drop a mail @ Arijitdhar401@gmail.com 
+        <button onclick="copyText()">
+        <img width="25px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-TpbJKTEpuFyysXfydY7DiRlDUH7YmqOYIt4sPP7nxQ&s" alt="">
+        </button>
+    </p>
+
+  </div>
+ </div>
+
 </body>
 </html>
+
+
+<script>
+    function copyText() {
+  
+        /* Copy text into clipboard */
+        navigator.clipboard.writeText
+            ("Arijitdhar401@gmail.com");
+    }
+</script>
