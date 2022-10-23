@@ -20,7 +20,7 @@ box-sizing: border-box;
   }
   
   .nav {
-    height: 70px;
+    height: 65px;
     width: 100%;
      background-color: #ffffff;   
     position: fixed;
@@ -86,7 +86,7 @@ box-sizing: border-box;
 .text button{
     padding: 10px;
     font-size: 25px;
-     background-color: rgb(17, 179, 179);  
+    background-color: rgb(17, 179, 179);  
     border: none;
     border-radius: 10px;
 }
@@ -102,7 +102,7 @@ box-sizing: border-box;
 .image img{
     width: 70%;
     height: 80%;
-      border-radius: 40%;  
+      border-radius: 40%;       
     object-fit: cover;
      /* margin-left: 80px;  */
     margin-top: 50px;
@@ -114,7 +114,7 @@ box-sizing: border-box;
     font-family: Merriweather;
     height: auto;
     margin: auto;
-     background-color: burlywood; 
+     /* background-color: burlywood;  */
     margin-bottom: 50px;
     padding-bottom: 10px;
 }
@@ -150,8 +150,8 @@ box-sizing: border-box;
   
   width: 100%;
   height:auto;
-   background-color: rgb(7, 72, 129); 
-  padding: 20px;
+   /* background-color: rgb(7, 72, 129);  */
+  /* padding: 20px; */
   margin: auto;
   text-align: center;
   padding-bottom: 20px;
@@ -220,16 +220,67 @@ box-sizing: border-box;
     color: rgb(0, 0, 0);
 }
 
+.project{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,40%);
+  grid-template-rows: repeat(2,500px);
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-content: space-evenly;
+  justify-content: center;
+  background-color: rgb(238, 238, 230);
+  padding: 25px;
+}
 
+.project>div{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-
-
-
-
-
-
+.project>div>div{
+    width: 100%;
+     padding: 5px; 
+    height: 50%;
+    /* background-color: aquamarine; */
+}
+.project>div>div>img{
+    width: 100%;
+    height: 100%;
+     object-fit: cover; 
+}
+.project>div>div>img:hover{
+  /* width: 130%;
+  height: 130%; */
+   /* object-fit: cover;  */
+   transform: scale(1.05); 
+}
+.project>div>p{
+ font-size: 20px;
+ text-align: left;
+ padding: 10px;
+ font-family: Merriweather;
+ line-height: 25px;
+}
+.project>div>button{
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Merriweather;
+  background-color: rgb(17, 163, 163);
+  border-radius: 10px;
+  border: none;
+ }
+ .project>div>button>a{
+  text-decoration: none;
+  color: white;
+ }
 /* ---------------------------------------------- */
-    @media all and (min-width: 480px) and (max-width: 700px){
+    @media all and (min-width: 480px) and (max-width: 770px){
     
     
     
@@ -264,6 +315,7 @@ box-sizing: border-box;
         width: 50px;
         height: 50px;
         padding: 13px;
+        /* background-color: #0a0505; */
       }
       .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
         background-color: rgba(0, 0, 0, 0.3);
@@ -272,7 +324,8 @@ box-sizing: border-box;
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #eee;
+        border-top: 2px solid rgb(0, 0, 0);
+        /* background-color: #0a0505; */
       }
       .nav > .nav-links {
         position: absolute;
@@ -296,17 +349,17 @@ box-sizing: border-box;
         height: calc(100vh - 50px);
         overflow-y: auto;
       }
-       #container{
+      #container{
   
-      width: 100%;
-      height:auto;
-      /* background-color: aliceblue; */
-      padding: 20px;
-      margin: auto;
-      text-align: center;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
-    }
+        width: 100%;
+        height:auto;
+        /* background-color: aliceblue; */
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
       .technical{
         width: 90%;
         height: auto;
@@ -322,6 +375,7 @@ box-sizing: border-box;
         justify-content: center;
         margin-bottom: 30px;
     }
+
    
 }
 
@@ -411,7 +465,7 @@ box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(2,100px);
         grid-template-rows: repeat(5,120px);
-        column-gap: 60px;
+        column-gap: 40px;
         row-gap: 40px;
         justify-content: space-between;
         justify-content: center;
@@ -421,7 +475,7 @@ box-sizing: border-box;
     }
     #container{
       margin-top: 50px;
-      width: 450px;
+      width: auto;
       height:auto;
       /* background-color: aliceblue; */
       padding: 20px;
@@ -430,4 +484,151 @@ box-sizing: border-box;
       padding-bottom: 20px;
       margin-bottom: 30px;
     }
+
+    .technical>div{
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+       /* border: 1px solid blue; */
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       background-color: white;
+       border-radius: 15px;
+      }
+      .about h2{
+ 
+        margin-left: 30%;  
+       /* justify-content: center; */
+       padding: 8px;
+    }
+      .about h2:first-child{
+ 
+        margin-left: 35%;  
+       /* justify-content: center; */
+       padding: 8px;
+  }
+  
+  
+  .line{
+      width: 100px;
+      height: 3px;
+      background-color: rgb(128, 13, 163);
+      margin-left: 32%;
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1050px){
+ 
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .home{
+    margin-top: 50px;
+  }
+  .project{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(4,500px);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+    background-color: rgb(238, 238, 230);
+    padding: 25px;
+  }
+  
+}
+@media all and (min-width: 400px) and (max-width: 770px){
+
+  .project{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(4,450px);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+    background-color: rgb(238, 238, 230);
+    padding: 25px;
+  }
+  .project>div>p{
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+    font-family: Merriweather;
+    line-height: 20px;
+    margin-top: 10px;
+   }
+   .h2{
+    font-size: 20px;
+   }
+  
+}
+@media all and (min-width: 300px) and (max-width: 400px){
+
+  .project{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(4,480px);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+    background-color: rgb(238, 238, 230);
+    padding: 25px;
+  }
+  .project>div>p{
+    font-size: 13px;
+    text-align: left;
+    padding: 5px;
+    font-family: Merriweather;
+    line-height: 20px;
+    margin-top: 10px;
+   }
+   .h2{
+    font-size: 20px;
+   }
+  
 }
