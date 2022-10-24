@@ -618,7 +618,7 @@ box-sizing: border-box;
     row-gap: 40px;
     justify-content: space-evenly;
     justify-content: center;
-    background-color: rgb(238, 238, 230);
+    /* background-color: rgb(238, 238, 230); */
     padding: 25px;
   }
   
@@ -634,7 +634,7 @@ box-sizing: border-box;
     row-gap: 40px;
     justify-content: space-evenly;
     justify-content: center;
-    background-color: rgb(238, 238, 230);
+    /* background-color: rgb(238, 238, 230); */
     padding: 25px;
   }
   .project>div>p{
