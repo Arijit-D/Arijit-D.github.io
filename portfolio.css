@@ -1,6 +1,8 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Merriweather:wght@300&display=swap');
+
 *{
 margin: 0px;
 padding: 0px;
@@ -24,12 +26,15 @@ box-sizing: border-box;
     width: 100%;
      background-color: #ffffff;   
     position: fixed;
+    z-index: 10;
     top: 0.1px;
+   
+    font-family: Merriweather;
   }
   
   .nav > .nav-header {
     display: inline;
-    margin-left: 100px;
+    margin-left: 80px;
   }
   
   .nav > .nav-header > .nav-title {
@@ -75,7 +80,10 @@ box-sizing: border-box;
     font-family: Merriweather;
     
 }
-
+.home a{
+  text-decoration: none;
+  color: white;
+}
 .text{
     width: 40%;
     font-size: 40px;
@@ -128,7 +136,7 @@ box-sizing: border-box;
 .line{
     width: 200px;
     height: 3px;
-    background-color: rgb(128, 13, 163);
+    background-color: blueviolet;
     margin-left: 38%;
 }
 .about h2{
@@ -187,6 +195,10 @@ box-sizing: border-box;
      border-radius: 15px;
     }
 
+    .technical>div:hover{
+       scale: 1.05;
+      }
+
 /* .soft{
     width: 90%;
     height: 150px; */
@@ -229,7 +241,7 @@ box-sizing: border-box;
   row-gap: 40px;
   justify-content: space-evenly;
   justify-content: center;
-  background-color: rgb(238, 238, 230);
+  /* background-color: rgb(238, 238, 230); */
   padding: 25px;
 }
 
@@ -238,6 +250,7 @@ box-sizing: border-box;
   height: auto;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
 }
 
 .project>div>div{
@@ -278,6 +291,35 @@ box-sizing: border-box;
  .project>div>button>a{
   text-decoration: none;
   color: white;
+ }
+
+ .contact{
+  text-align: center;
+  font-size: 25px;
+  background-color: #031c2b;
+  height: 350px;
+  color: #eceef0;
+  font-family: Merriweather;
+ }
+ .contact h2{ 
+  margin: 10px;
+  font-size: 25px;
+ }
+ .contact h2:first-child{ 
+  padding-top: 70px;
+  margin: 10px;
+ }
+ .contact .line{
+   margin: auto;
+   width: 250px;
+   height: 3px;
+   background-color: blueviolet;
+ }
+ .icon ion-icon{
+  margin: 8px;
+ }
+ .contact a{
+    color: #eceef0;
  }
 /* ---------------------------------------------- */
     @media all and (min-width: 480px) and (max-width: 770px){
@@ -431,7 +473,7 @@ box-sizing: border-box;
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #eee;
+        border-top: 2px solid rgb(3, 0, 0);
       }
       .nav > .nav-links {
         position: absolute;
@@ -493,6 +535,7 @@ box-sizing: border-box;
        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        background-color: white;
        border-radius: 15px;
+       font-size: 12px;
       }
       .about h2{
  
