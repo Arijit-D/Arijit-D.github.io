@@ -186,23 +186,23 @@
          </div>
          <div data-aos="zoom-in-down">
           <div>
-            <img src="Screenshot (1).png" alt="">
-            <h2>Clockify Website Clone</h2>
+            <img src="Screenshot (12).png" alt="">
+            <h2>Geekbuying Website Clone</h2>
           </div>
           <p>
-            Clockify is a time tracker and timesheet app that lets us track work hours across projects. 
+            Geekbuying is a e-commerce website. 
           </p>
 
           <p>
-            A collaborative project, built in 5 days by a team of 5 developers.
+            A collaborative project, built in 5 days by a team of 4 developers.
           </p>
           <p>
             HTML | CSS | JavaScript
           </p>
-          <button><a href="https://github.com/lokeshahire/abrasive-trade-5771"> GitHub</a></button>
-          <button><a href="https://clockify-me-clone.netlify.app/"> Live</a></button>
+          <button><a href="https://github.com/ankit2341/Eagles"> GitHub</a></button>
+          <button><a href="https://elaborate-dolphin-930be6.netlify.app/"> Live</a></button>
        </div>
-       <div data-aos="zoom-in-down">
+       <!-- <div data-aos="zoom-in-down">
         <div>
           <img src="Screenshot (1).png" alt="">
           <h2>Clockify Website Clone</h2>
@@ -237,23 +237,52 @@
       </p>
       <button><a href="https://github.com/lokeshahire/abrasive-trade-5771"> GitHub</a></button>
      
-      <button><a href="https://clockify-me-clone.netlify.app/"> Live</a></button>
-      <section id="contacts">
+      <button><a href="https://clockify-me-clone.netlify.app/"> Live</a></button> -->
+     
     
       </section>
     
     </div> 
    </div>
    </div>
+   
+    
+    <div class="gitStats">
+      <div>
+        <h2>GitHub Statistics</h2>
+      </div>
+      <div>
+        <img src="https://github-readme-stats.vercel.app/api?username=Arijit-D&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="">
+      </div>
 
-     
+      <div>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arijit-D&theme=dark&hide_border=false" alt="">
+      </div>
+
+    </div>
+         <!-- Include the library. -->
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<!-- <div class="calendar" style="margin: auto;">
+   Loading stuff 
+  Loading the data just for you.
+</div> -->
+
+
+        <section id="contacts">
+    
       <div class="contact">
 
         <h2>Get In Touch</h2>
         <div class="line"></div>
         <h2>Arijit Dhar</h2>
        <div class="contact_links">
-        
         
 
        </div>
@@ -267,9 +296,6 @@
        </div>
        <h2 style="font-size:22px;">© 2022 copyright all right reserved</h2>
        </div>
-
-
-
 
 
 </div>
@@ -287,3 +313,22 @@
 </html>
 
 <script src="portfolio.js"></script>
+
+
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<script>
+  GitHubCalendar(".calendar", "Arijit-D");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "Arijit-D", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "Arijit-D", {
+     proxy (username) {
+       return fetch(`https://your-proxy.com/github?user=${Arijit-D}`)
+     }
+  }).then(r => r.text())
+</script>

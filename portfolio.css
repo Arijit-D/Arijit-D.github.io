@@ -237,7 +237,7 @@ box-sizing: border-box;
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2,40%);
-  grid-template-rows: repeat(2,500px);
+  grid-template-rows: repeat(1,500px);
   column-gap: 40px;
   row-gap: 40px;
   justify-content: space-evenly;
@@ -323,6 +323,30 @@ box-sizing: border-box;
  .contact a{
     color: #eceef0;
  }
+
+ .gitStats div{
+   width: 70%;
+   margin: auto;
+ }
+
+ .gitStats div h2{
+  width: 100%;
+  text-align: center;
+  margin-top:60px;
+  margin-bottom:60px;
+  font-size: 35px;
+  font-family: Merriweather;
+}
+ .gitStats div img{
+  width: 100%;
+  margin: auto;
+}
+.calemdar img{
+  width: 100%;
+}
+.calemdar svg{
+  width: 100%;
+}
 /* ---------------------------------------------- */
     @media all and (min-width: 480px) and (max-width: 770px){
     
@@ -559,6 +583,10 @@ box-sizing: border-box;
       background-color: rgb(128, 13, 163);
       margin: auto;
   }
+
+  .calemdar svg{
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 770px) and (max-width: 1050px){
@@ -613,7 +641,7 @@ box-sizing: border-box;
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(4,500px);
+    grid-template-rows: repeat(2,500px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
@@ -629,7 +657,7 @@ box-sizing: border-box;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(4,450px);
+    grid-template-rows: repeat(2,450px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
@@ -656,7 +684,7 @@ box-sizing: border-box;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(4,480px);
+    grid-template-rows: repeat(2,480px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
