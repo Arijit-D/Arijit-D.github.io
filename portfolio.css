@@ -237,7 +237,7 @@ box-sizing: border-box;
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2,40%);
-  grid-template-rows: repeat(1,500px);
+  grid-template-rows: repeat(2,500px);
   column-gap: 40px;
   row-gap: 40px;
   justify-content: space-evenly;
@@ -273,9 +273,10 @@ box-sizing: border-box;
    transform: scale(1.05); 
 }
 .project>div>p{
- font-size: 20px;
+ font-size: 17px;
  text-align: left;
  padding: 10px;
+ /* margin-top: 20px; */
  font-family: Merriweather;
  line-height: 25px;
 }
@@ -641,7 +642,7 @@ box-sizing: border-box;
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(2,500px);
+    grid-template-rows: repeat(4,500px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
@@ -657,7 +658,7 @@ box-sizing: border-box;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(2,450px);
+    grid-template-rows: repeat(4,450px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
@@ -684,12 +685,12 @@ box-sizing: border-box;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(1,80%);
-    grid-template-rows: repeat(2,480px);
+    grid-template-rows: repeat(4,480px);
     column-gap: 40px;
     row-gap: 40px;
     justify-content: space-evenly;
     justify-content: center;
-    background-color: rgb(238, 238, 230);
+    /* background-color: rgb(238, 238, 230); */
     padding: 25px;
   }
   .project>div>p{
