@@ -707,3 +707,42 @@ box-sizing: border-box;
   
 }
 
+
+.calendar{
+
+  border: 2px solid rgb(119, 18, 18);
+
+  /* background-color: blue; */
+
+  width: 90%;
+ 
+  /* width: fit-content; */
+
+  margin: auto;
+
+}
+
+/* .calendar>div{
+width: 70%;
+margin: auto;
+} */
+
+.js-calendar-graph{
+  width: 95%;
+}
+
+
+
+.js-calendar-graph-svg{
+  width: 75%;
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+rect.ContributionCalendar-day{
+  /* width: 1%; */
+
+}
+
+
+
